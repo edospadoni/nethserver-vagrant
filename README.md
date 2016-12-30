@@ -7,8 +7,6 @@ Start a clean NethServer installation with [vagrant](https://www.vagrantup.com/)
  - VirtualBox / Libvirt / VMWare
 
  - Vagrant
-
- - Vagrantfile from this repo
 ```
 Fedora
 dnf install vagrant
@@ -16,6 +14,8 @@ dnf install vagrant
 Ubuntu \ Debian
 apt-get install vagrant
 ```
+ - Vagrantfile from this repo
+
 ### Start
 - Set the IP of the virtual machine
 - Set the interface name for the network bridge
@@ -33,6 +33,11 @@ the command is:
 
 `IPADDR=192.168.5.228 BRIDGE=enp2s0 vagrant up --provider virtualbox`
 
-At the end of the installation you can easily SSH into machine with
+### SSH Access
+You can easily SSH into machine with
 
 `vagrant ssh` or `ssh root@<ip_address>`
+
+default credentials are:
+- username: `root`
+- password: `vagrant`
