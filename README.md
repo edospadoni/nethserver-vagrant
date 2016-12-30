@@ -20,13 +20,18 @@ apt-get install vagrant
 - Set the IP of the virtual machine
 - Set the interface name for the network bridge
 
-`IPADDR=<ip_address> BRIDGE=<interface_name> vagrant up`
+`IPADDR=<ip_address> BRIDGE=<interface_name> vagrant up --provider <your_vm_provider>`
 
 #### Example
 
-If your interface name is `enp2s0` and the IP of the machine will be `192.168.5.228` the command is:
+- Interface name: `enp2s0`
+- IP: `192.168.5.228`
+- Provider: `virtualbox`
 
-`IPADDR=192.168.5.228 BRIDGE=enp2s0 vagrant up`
+the command is:
+
+
+`IPADDR=192.168.5.228 BRIDGE=enp2s0 vagrant up --provider virtualbox`
 
 At the end of the installation you can easily SSH into machine with
 
